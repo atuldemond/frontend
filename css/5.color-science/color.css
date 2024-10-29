@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  background-color: navy;
+}
+#elements::first-letter {
+  color: aqua;
+  font-size: x-large;
+}
+#elements::first-line {
+  background-color: bisque;
+}
+#elements::before {
+  content: "BETTER";
+  width: 100px;
+  height: 100px;
+}
+#elements::after {
+  /* position: absolute; */
+  content: "BETTER";
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+}
+
+#elements::selection {
+  color: white;
+}
+/* pseduo :class */
+
+.p-class:hover {
+  background-color: aquamarine;
+}
+
+.p-class button:active {
+  background-color: green;
+}
+
+#input:focus {
+  background-color: aquamarine;
+}
+
+p:nth-child(2n) {
+  background-color: blue;
+}
