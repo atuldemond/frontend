@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 80px;
+  padding-top: 150;
+}
+
+#left {
+  height: 100%;
+  width: 40%;
+  /* background-color: rgba(0, 0, 128, 0); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#left h1 {
+  font-size: 120px;
+  font-weight: 500;
+  line-height: 120px;
+}
+
+#bottom-left {
+  height: 50%;
+  width: 100%;
+  background-color: rgba(255, 255, 0, 0);
+  padding: 10px;
+}
+#color {
+  background-color: rgba(0, 0, 255, 0);
+  width: fit-content;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid black;
+  gap: 2px;
+}
+#color h5 {
+  font-size: 20px;
+  margin-right: 10px;
+  font-weight: 500;
+}
+#color1 {
+  width: 20px;
+  height: 20px;
+  background-color: burlywood;
+  border-radius: 50%;
+}
+#color2 {
+  width: 20px;
+  height: 20px;
+  background-color: brown;
+  border-radius: 50%;
+}
+#left h2 {
+  margin-top: 50px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#left p {
+  font-size: 15px;
+  width: 70%;
+  color: #444;
+  line-height: 30px;
+}
+#right {
+  height: 90%;
+  width: 30%;
+  background-color: rgba(190, 188, 77, 0);
+  position: relative;
+  margin-right: 10%;
+}
+
+#right-top {
+  height: 50px;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#right-top h4 {
+  font-size: 30px;
+  font-weight: 500;
+}
+#right-top h5 {
+  font-size: 16px;
+}
+
+#right-top h5 i {
+  color: gold;
+}
+
+#right img {
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+}
+#black {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(105, 99, 99);
+  color: white;
+  border-radius: 50%;
+  right: 80%;
+  top: 20%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#black h5 {
+  font-size: 28px;
+  font-weight: lighter;
+}
+#rotated {
+  position: absolute;
+  left: -10%;
+  bottom: 5%;
+  rotate: -90deg;
+  transform-origin: 0 0;
+  margin-right: 20px;
+}
