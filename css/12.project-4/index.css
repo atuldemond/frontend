@@ -301,3 +301,62 @@ body {
   object-fit: cover;
   object-position: center;
 }
+
+#page3 {
+  width: 100%;
+  height: 100%;
+  /* background-color: pink; */
+  position: relative;
+  padding: 5vw 4vw;
+}
+#page3 > h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4vw;
+  letter-spacing: 2vw;
+  margin-bottom: 2vw;
+}
+
+.elem {
+  height: 18vh;
+  width: 100%;
+  /* background-color: blue; */
+  border-top: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+  position: relative;
+}
+.elem img {
+  height: 110px;
+  width: 110px;
+  position: absolute;
+  border-radius: 50%;
+  left: 20%;
+  opacity: 0;
+  transition: all ease 0.7s;
+  object-fit: cover;
+  object-position: center;
+}
+
+.elem h4 {
+  font-size: 1.3vw;
+  text-transform: uppercase;
+  width: 10%;
+}
+.elem .elem-part2 {
+  width: 45%;
+}
+.elem .elem-part2 h5 {
+  text-transform: uppercase;
+}
+.elem:nth-last-child(1) {
+  border-bottom: 2px solid black;
+}
+
+.elem:hover img {
+  opacity: 1;
+  left: 30%;
+  cursor: pointer;
+}
