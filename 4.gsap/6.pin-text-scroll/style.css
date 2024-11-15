@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#page1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(183, 131, 94);
+}
+
+#page2 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(122, 85, 85);
+}
+#page2 h1 {
+  font-size: 40vw;
+  font-family: sans-serif;
+}
+
+#page3 {
+  width: 100%;
+  height: 100%;
+  background-color: slategray;
+}
