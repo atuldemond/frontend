@@ -1,0 +1,6 @@
+destructuring
+spreed 
+map filter fat arraw
+array and object
+import and exports
+ternary opeartore
