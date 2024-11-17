@@ -1,46 +1,36 @@
 import React from "react";
-import { useState } from "react";
-const Card = ({ name, age }) => {
-  const [count, setCount] = useState({
-    value: 0,
-    boolean: true,
-    name: "Atul Demond",
-  });
+import { useState, useRef } from "react";
+const Card = () => {
+  // const name = useRef(null);
+  const [val, setVal] = useState({ name: "", age: "" });
 
-  const change = () => {
-    setCount(() => {
-      return {
-        ...count,
-        value: count.value + 1,
-        boolean: !count.boolean,
-        name: "Sumit Raj",
-      };
-    });
+  // preventDefault
+  
+  const handleSubmit = (details) => {
+    details.preventDefault();
+    console.log(val);
   };
 
   return (
     <>
-      <h1>{name}</h1>
-      <h1>{age}</h1>
+      {/* <form action="" onSubmit={handleSubmit}>
+        <input ref={name} type="text" placeholder="name" />
+        <input type="submit" />
+      </form> */}
 
-      <h1 className="text-4xl">{count.value}</h1>
-      <h1 className="text-4xl">{count.boolean.toString()}</h1>
-      <h1 className="text-4xl">{count.name}</h1>
-
-      <button
-        onClick={change}
-        className={` px-4 py-2 ${
-          count.boolean ? "bg-green-500" : "bg-red-400"
-        }`}
-      >
-        +1
-      </button>
-      {/* <button
-        onClick={() => setCount((prev) => prev + 5)}
-        className="bg-red-300 px-4 py-2 "
-      >
-        +5
-      </button> */}
+      <form action="" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          onChange={(event) => setVal({ ...val, name: event.target.value })}
+          placeholder="name"
+        />
+        <input
+          type="text"
+          onChange={(event) => setVal({ ...val, age: event.target.value })}
+          placeholder="age"
+        />
+        <input type="submit" />
+      </form>
     </>
   );
 };
