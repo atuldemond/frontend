@@ -1,10 +1,10 @@
 import React from "react";
-import Card from "./components/Card";
+import Nav from "./components/Nav";
 
 const App = () => {
   return (
     <>
-      <Card name="ATUL Demond" age="24" />
+      <Nav />
     </>
   );
 };
